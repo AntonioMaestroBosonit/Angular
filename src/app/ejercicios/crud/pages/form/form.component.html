@@ -1,0 +1,85 @@
+<form (ngSubmit)="save( form )" #form="ngForm">
+  <div class="row">
+    <div class="col d-flex mb-3">
+      <div class="form-floating me-3 w-50">
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          placeholder="Nombre de usuario"
+        />
+        <label for="username">Nombre de usuario</label>
+      </div>
+      <div class="form-floating w-50">
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Correo electrónico"
+        />
+        <label for="email">Correo electrónico</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex mb-3">
+      <div class="form-floating me-3 w-50">
+        <input
+          type="password"
+          class="form-control"
+          id="pass"
+          placeholder="Contraseña"
+        />
+        <label for="pass">Contraseña</label>
+      </div>
+      <div class="form-floating w-50">
+        <input
+          type="password"
+          class="form-control"
+          id="passConfirm"
+          placeholder="Confirmar contraseña"
+        />
+        <label for="passConfirm">Confirmar contraseña</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex mb-3">
+      <div class="form-floating me-3 w-50">
+        <input
+          type="text"
+          class="form-control"
+          id="country"
+          placeholder="País"
+        />
+        <label for="country">País</label>
+      </div>
+      <div class="form-floating w-50">
+        <input
+          type="text"
+          class="form-control"
+          id="city"
+          placeholder="Ciudad"
+        />
+        <label for="city">Ciudad</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex justify-content-around align-items-center mb-3">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="offers"
+          checked
+        />
+        <label class="form-check-label" for="offers">
+          Envíame ofertas promocionales
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,21 @@
+<h1>Comunicación Padre / Hijo</h1>
+<hr>
+<div class="row padre">
+    <div class="col">
+        <h3>PARENT</h3>
+        <p>message: {{ parentText }}</p>
+        <button class="btn btn-primary"
+                (click)="serviceChild()">Use Service</button>
+        <button class="btn btn-primary"
+                (click)="inputChild()">Use Input Property</button>
+        <button class="btn btn-primary"
+                (click)="observableChild()">Use Observable</button>
+
+        <div class="row hijo">
+            <div class="col">
+                <app-child [childMsg]="childText"
+                           (parentEv)="parentMsg($event)"></app-child>
+            </div>
+        </div>
+    </div>
+</div>

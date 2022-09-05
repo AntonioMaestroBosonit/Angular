@@ -1,0 +1,12 @@
+<h1>Ejercicio 1: DISPLAY / HIDE</h1>
+<hr>
+
+<button class="btn btn-primary"
+        (click)="showImage()">
+        {{ (status) ? 'Esconder' : 'Enseñar' }}
+</button>
+  
+<div *ngIf="status == true">
+    <img src="../../../assets/images/holamundo.jpg" 
+         alt="Hello World">
+</div>
