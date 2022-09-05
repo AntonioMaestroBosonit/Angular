@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html'
 })
-export class FormComponent implements OnInit {
+export class FormComponent {
 
-  constructor() { }
+  form: FormGroup = this.fb.group({
+    username: ['', Validators.required],
+    email: ['', Validators.required],
+    pass: ['', Validators.required],
+    passConfirm: ['', Validators.required],
+    country: ['', Validators.required],
+    city: ['', Validators.required],
+    offers: [true]
+  });
 
-  ngOnInit(): void {
-  }
-
-  save( form: any ) {
-    console.log(form);
-    
-  }
+  constructor( private fb: FormBuilder ) { }
 
 }

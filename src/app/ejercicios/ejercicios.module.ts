@@ -12,7 +12,7 @@ import { SearchComponent } from './search/search.component';
 import { ChildComponent } from './communication/pages/child.component';
 import { DataService } from './communication/services/data.service';
 import { FormComponent } from './crud/pages/form/form.component';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     EjerciciosRoutingModule,
-    FormsModule
+    ReactiveFormsModule
   ],
   providers: [
     DataService

@@ -1,10 +1,11 @@
-<form (ngSubmit)="save( form )" #form="ngForm">
+<form autocomplete="off" [formGroup]="form">
   <div class="row">
     <div class="col d-flex mb-3">
       <div class="form-floating me-3 w-50">
         <input
           type="text"
           class="form-control"
+          formControlName="username"
           id="username"
           placeholder="Nombre de usuario"
         />
@@ -14,6 +15,7 @@
         <input
           type="email"
           class="form-control"
+          formControlName="email"
           id="email"
           placeholder="Correo electrónico"
         />
@@ -27,6 +29,7 @@
         <input
           type="password"
           class="form-control"
+          formControlName="pass"
           id="pass"
           placeholder="Contraseña"
         />
@@ -36,6 +39,7 @@
         <input
           type="password"
           class="form-control"
+          formControlName="passConfirm"
           id="passConfirm"
           placeholder="Confirmar contraseña"
         />
@@ -49,6 +53,7 @@
         <input
           type="text"
           class="form-control"
+          formControlName="country"
           id="country"
           placeholder="País"
         />
@@ -58,6 +63,7 @@
         <input
           type="text"
           class="form-control"
+          formControlName="city"
           id="city"
           placeholder="Ciudad"
         />
@@ -71,15 +77,25 @@
         <input
           class="form-check-input"
           type="checkbox"
-          value=""
+          formControlName="offers"
           id="offers"
-          checked
         />
         <label class="form-check-label" for="offers">
           Envíame ofertas promocionales
         </label>
       </div>
-      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Guardar</button>
     </div>
   </div>
 </form>
+
+
+<div class="row">
+    <div class="col">
+        <span>Valid</span>
+        <pre>{{ form.valid }}</pre>
+
+        <span>Value</span>
+        <pre>{{ form.value | json }}</pre>
+    </div>
+</div>
