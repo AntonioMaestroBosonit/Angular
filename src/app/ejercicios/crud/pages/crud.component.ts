@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CrudService } from '../services/crud.service';
-import { Users } from '../interfaces/users.interface';
+import { User } from '../interfaces/users.interface';
 
 @Component({
   selector: 'app-crud',
@@ -8,7 +8,7 @@ import { Users } from '../interfaces/users.interface';
 })
 export class CrudComponent implements OnInit {
 
-  users: Users[] = [];
+  users: User[] = [];
 
   constructor( private crudService: CrudService ) { }
 

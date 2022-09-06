@@ -1,4 +1,4 @@
-<form autocomplete="off" [formGroup]="form">
+<form (ngSubmit)="save()" autocomplete="off" [formGroup]="form">
   <div class="row">
     <div class="col d-flex mb-3">
       <div class="form-floating me-3 w-50">
@@ -49,16 +49,11 @@
   </div>
   <div class="row">
     <div class="col d-flex mb-3">
-      <div class="form-floating me-3 w-50">
-        <input
-          type="text"
-          class="form-control"
-          formControlName="country"
-          id="country"
-          placeholder="País"
-        />
-        <label for="country">País</label>
-      </div>
+      <select class="form-select me-3 w-50"
+              formControlName="country">
+        <option selected disabled value="">País</option>
+        <option *ngFor="let country of countries" [value]="country.name">{{ country.name }}</option>
+      </select>
       <div class="form-floating w-50">
         <input
           type="text"

@@ -12,9 +12,9 @@
     </thead>
     <tbody *ngFor="let user of users">
       <tr class="align-middle">
-        <td>{{ user.name | titlecase }}</td>
+        <td>{{ user.username | titlecase }}</td>
         <td>{{ user.email }}</td>
-        <td><i *ngIf="user.subscribe" class="bi bi-check2-circle fs-4"></i></td>
+        <td><i *ngIf="user.offers" class="bi bi-check2-circle fs-4"></i></td>
         <td>{{ user.country | titlecase }}</td>
         <td>{{ user.city | titlecase }}</td>
         <td>

@@ -1,20 +1,49 @@
 {
   "usuarios": [
     {
-      "name": "admin",
+      "id": 1,
+      "username": "admin",
       "pass": "1234",
       "email": "admin@hola.com",
-      "subscribe": true,
-      "country": "España",
+      "offers": true,
+      "country": "Spain",
       "city": "Jaén"
     },
     {
-      "name": "user",
+      "id": 2,
+      "username": "user",
       "pass": "4321",
       "email": "user@hola.com",
-      "subscribe": false,
-      "country": "Españita",
+      "offers": false,
+      "country": "Spain",
       "city": "Martos"
+    },
+    {
+      "username": "antonio",
+      "pass": "antonio",
+      "email": "antonio@antonio.com",
+      "offers": true,
+      "country": "Germany",
+      "city": "antonio",
+      "id": 3
+    },
+    {
+      "username": "hola holita",
+      "email": "adios@adios.com",
+      "pass": "1234",
+      "country": "Åland Islands",
+      "city": "asdf",
+      "offers": true,
+      "id": 4
+    },
+    {
+      "username": "asdf asdf",
+      "email": "asdf@asdf.es",
+      "pass": "asdf",
+      "country": "Afghanistan",
+      "city": "asdf",
+      "offers": false,
+      "id": 5
     }
   ]
 }

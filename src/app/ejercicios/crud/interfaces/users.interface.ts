@@ -1,8 +1,9 @@
-export interface Users {
-    name: string;
+export interface User {
+    id?: number;
+    username: string;
     pass:    string;
     email:   string;
-    subscribe: boolean;
+    offers: boolean;
     country:    string;
     city:  string;
 }
