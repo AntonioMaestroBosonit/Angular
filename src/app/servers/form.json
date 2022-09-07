@@ -1,30 +1,30 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "username": "admin",
-      "pass": "1234",
+      "username": "admin uno",
       "email": "admin@hola.com",
+      "pass": "1234",
+      "country": "Singapore",
+      "city": "Jaén",
       "offers": true,
-      "country": "Spain",
-      "city": "Jaén"
+      "id": 1
     },
     {
-      "id": 2,
-      "username": "user",
-      "pass": "4321",
+      "username": "user dos",
       "email": "user@hola.com",
-      "offers": false,
+      "pass": "4321",
       "country": "Spain",
-      "city": "Martos"
+      "city": "Martos",
+      "offers": false,
+      "id": 2
     },
     {
-      "username": "antonio",
-      "pass": "antonio",
+      "username": "Antonio Maestro",
       "email": "antonio@antonio.com",
-      "offers": true,
+      "pass": "antonio",
       "country": "Germany",
       "city": "antonio",
+      "offers": true,
       "id": 3
     },
     {
@@ -35,15 +35,6 @@
       "city": "asdf",
       "offers": true,
       "id": 4
-    },
-    {
-      "username": "asdf asdf",
-      "email": "asdf@asdf.es",
-      "pass": "asdf",
-      "country": "Afghanistan",
-      "city": "asdf",
-      "offers": false,
-      "id": 5
     }
   ]
 }

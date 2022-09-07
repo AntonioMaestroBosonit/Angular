@@ -20,7 +20,7 @@ interface MenuItem{
 export class MenuComponent {
 
   menu: MenuItem[] = [
-    { ruta: '/ejercicios/display', texto: 'Display / Hide' },
+    { ruta: '/ejercicios/display', texto: 'Mostrar / Ocultar' },
     { ruta: '/ejercicios/communication', texto: 'Comunicación' },
     { ruta: '/ejercicios/crud', texto: 'CRUD' },
     { ruta: '/ejercicios/search', texto: 'Buscador' },

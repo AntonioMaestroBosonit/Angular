@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommunicationComponent } from './communication/pages/communication.component';
 import { CounterComponent } from './counter/counter.component';
-import { CrudComponent } from './crud/pages/crud.component';
 import { DataLibraryComponent } from './data-library/data-library.component';
 import { DisplayComponent } from './display/display.component';
 import { LightsComponent } from './lights/lights.component';
 import { SearchComponent } from './search/search.component';
+import { FormComponent } from './crud/pages/form/form.component';
 
 const routes: Routes = [
   {
@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       { path: 'communication', component: CommunicationComponent },
       { path: 'counter', component: CounterComponent },
-      { path: 'crud', component: CrudComponent },
+      { path: 'crud', component: FormComponent },
       { path: 'data-library', component: DataLibraryComponent },
       { path: 'display', component: DisplayComponent },
       { path: 'lights', component: LightsComponent },

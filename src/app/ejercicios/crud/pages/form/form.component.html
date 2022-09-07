@@ -79,7 +79,11 @@
           Envíame ofertas promocionales
         </label>
       </div>
-      <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Guardar</button>
+      <button type="submit"
+              class="btn btn-primary" 
+              [disabled]="form.invalid">
+              {{ (buttonEdit) ? "Editar" : "Guardar" }}
+      </button>
     </div>
   </div>
 </form>
@@ -94,3 +98,5 @@
         <pre>{{ form.value | json }}</pre>
     </div>
 </div>
+
+<app-crud [users]="users" (user)="onUser($event)"></app-crud>

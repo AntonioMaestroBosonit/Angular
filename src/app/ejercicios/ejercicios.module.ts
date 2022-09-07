@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { EjerciciosRoutingModule } from './ejercicios-routing.module';
 import { CommunicationComponent } from './communication/pages/communication.component';
 import { CounterComponent } from './counter/counter.component';
-import { CrudComponent } from './crud/pages/crud.component';
+import { CrudComponent } from './crud/pages/table/crud.component';
 import { DataLibraryComponent } from './data-library/data-library.component';
 import { DisplayComponent } from './display/display.component';
 import { LightsComponent } from './lights/lights.component';
