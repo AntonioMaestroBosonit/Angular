@@ -5,7 +5,7 @@ import { CounterComponent } from './counter/counter.component';
 import { DataLibraryComponent } from './data-library/data-library.component';
 import { DisplayComponent } from './display/display.component';
 import { LightsComponent } from './lights/lights.component';
-import { SearchComponent } from './search/search.component';
+import { SearchComponent } from './search/pages/form/search.component';
 import { FormComponent } from './crud/pages/form/form.component';
 
 const routes: Routes = [

@@ -58,6 +58,7 @@ export class FormComponent implements OnInit {
     this.getUsers();
   }
 
+  //@Output
   onUser(user: User) {
     this.form.setValue({
       username: user.username,
@@ -99,7 +100,7 @@ export class FormComponent implements OnInit {
       this.form.controls['offers'].setValue(true);
       this.form.controls['country'].setValue("");
 
-      //Vuelvo a poner disponible el guardar y vacío el campo de Id
+      //Vuelvo a poner disponible el guardar y vacío el campo de Id(si no lo hago se queda en editar)
       this.buttonEdit = false;
       this.UserId = undefined;
   }
