@@ -9,11 +9,14 @@ import { ChildComponent } from './communication/pages/child.component';
 import { FormComponent } from './crud/pages/form/form.component';
 import { CrudComponent } from './crud/pages/table/crud.component';
 import { CounterComponent } from './counter/counter.component';
-import { DataLibraryComponent } from './data-library/data-library.component';
+import { DataLibraryComponent } from './data-library/pages/data-library.component';
 import { DisplayComponent } from './display/display.component';
 import { LightsComponent } from './lights/lights.component';
 import { SearchComponent } from './search/pages/form/search.component';
 import { ListComponent } from './search/pages/list/list.component';
+import { DonutComponent } from './data-library/components/donut/donut.component';
+import { BarComponent } from './data-library/components/bar/bar.component';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -27,12 +30,15 @@ import { ListComponent } from './search/pages/list/list.component';
     SearchComponent,
     ChildComponent,
     FormComponent,
-    ListComponent
+    ListComponent,
+    DonutComponent,
+    BarComponent
   ],
   imports: [
     CommonModule,
     EjerciciosRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgChartsModule
   ],
   providers: [
     // DataService      //compruebo si puedo quitarlo

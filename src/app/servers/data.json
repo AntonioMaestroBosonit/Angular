@@ -1,10 +1,10 @@
 {
   "usuarios": [
     {
-      "username": "admin uno",
+      "username": "admin unos",
       "email": "admin@hola.com",
       "pass": "1234",
-      "country": "Saint Barthélemy",
+      "country": "Lao People's Democratic Republic",
       "city": "Jaén",
       "offers": true,
       "id": 1
