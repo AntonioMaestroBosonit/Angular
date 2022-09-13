@@ -1,0 +1,13 @@
+<div class="col mt-4">
+  <h4>Controladores:</h4>
+  <hr class="w-25" />
+
+  <form [formGroup]="form" autocomplete="off" (change)="lightChange()">
+    <select class="form-select w-25" formControlName="color">
+      <option value="red">Rojo</option>
+      <option value="orange">Ámbar</option>
+      <option value="green">Verde</option>
+    </select>
+  </form>
+  <button class="btn mt-1" [class]="(status) ? 'btn-danger' : 'btn-success'" (click)="onOff()">{{ (status) ? 'Apagar' : 'Encender' }}</button>
+</div>

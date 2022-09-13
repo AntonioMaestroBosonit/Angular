@@ -30,7 +30,6 @@ export class CommunicationComponent implements OnInit {
   ngOnInit(): void {
     this.dataService.getParent$().subscribe(txt => this.childText = txt);
     this.dataService.getChild$().subscribe(txt => this.parentText = txt);
-
   }
 
 
