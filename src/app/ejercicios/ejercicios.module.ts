@@ -7,9 +7,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { ChildComponent }         from './communication/pages/child.component';
 import { CommunicationComponent } from './communication/pages/communication.component';
 // import { DataService }         from './communication/services/data.service';
-import { ControllersComponent }   from './counter/components/controllers/controllers.component';
 import { CounterComponent }       from './counter/pages/counter.component';
-import { ScreenComponent }        from './counter/components/screen/screen.component';
 import { CrudComponent }          from './crud/pages/table/crud.component';
 import { FormComponent }          from './crud/pages/form/form.component';
 import { BarComponent }           from './data-library/components/bar/bar.component';
@@ -29,7 +27,6 @@ import { SearchComponent }        from './search/pages/form/search.component';
     ChildComponent,
     CommunicationComponent,
     ControllerComponent,
-    ControllersComponent,
     CounterComponent,
     CrudComponent,
     DataLibraryComponent,
@@ -39,7 +36,6 @@ import { SearchComponent }        from './search/pages/form/search.component';
     LightsComponent,
     ListComponent,
     SearchComponent,
-    ScreenComponent,
     TrafficLightComponent,
   ],
   imports: [

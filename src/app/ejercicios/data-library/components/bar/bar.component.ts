@@ -40,7 +40,7 @@ export class BarComponent implements OnInit {
   public barChartData: ChartData<'bar'> = {
     labels: [ 'Oscuridad', 'Tierra', 'Fuego', 'Luz', 'Agua', 'Viento' ],
     datasets: [
-      { data: [ ], label: 'Atributos de monstruo' },
+      { data: [ ], label: 'Cantidad de monstruos' },
     ]
   };
 

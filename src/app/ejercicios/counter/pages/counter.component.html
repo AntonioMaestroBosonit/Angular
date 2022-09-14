@@ -1,13 +1,23 @@
 <div class="row">
-    <div class="col">
-        <h1>Contador</h1>
-        <hr>
-        <app-screen [counter]="counter"></app-screen>
-    </div>
+  <div class="col">
+    <h2>Contador</h2>
+    <hr />
+    <h1 class="mb-5">{{ counter }}</h1>
+  </div>
 </div>
 <div class="row">
-    <div class="col">
-        <app-controllers></app-controllers>
-    </div>
-</div>
+  <div class="col">
+    <button class="btn btn-primary me-1" id="start">start</button>
+    <button class="btn btn-primary me-1" id="pause">pause</button>
+    <button class="btn btn-primary me-1" id="reset">reset</button>
+    <p class="mb-1 mt-3">Count</p>
+    <button class="btn btn-primary me-1" id="countUp">count up</button>
+    <button class="btn btn-primary me-1" id="countDown">count down</button>
 
+    <p class="mb-1 mt-3">Step to</p>
+    <input type="number" class="form-control w-25" id="stepTo" />
+    <p class="mb-1 mt-3">Step</p>
+    <input type="number" class="form-control w-25" id="step" />
+
+  </div>
+</div>
