@@ -11,7 +11,7 @@ export class ControllerComponent implements OnInit {
 
   subscription: Subscription = new Subscription
   color: string = "";
-  status: boolean = false;          //Flag para el botón
+  status: boolean = false;                //Flag para el botón. estado de suscripción
   form: FormGroup = this.fb.group(        //Contiene el value del select
     {
       color: ""
@@ -48,7 +48,7 @@ export class ControllerComponent implements OnInit {
     (this.status) ? (
       this.subscription.unsubscribe(),
       this.status = false,
-      this.lightService.setColor('grey')
+      this.lightService.setColor('')
      ) : (
       this.subscription = this.lightService.getLight().subscribe( color => {
         this.color = color;

@@ -1,12 +1,14 @@
-<h1>Ejercicio 1: DISPLAY / HIDE</h1>
-<hr>
-
-<button class="btn btn-primary mb-1"
-        (click)="showImage()">
-        {{ (status) ? 'Esconder' : 'Enseñar' }}
-</button>
-  
-<div *ngIf="status == true">
-    <img src="../../../assets/images/holamundo.jpg" 
-         alt="Hello World">
+<div class="row">
+  <div class="col">
+    <button class="btn btn-primary mb-1" (click)="showImage()">
+      {{ status ? "Esconder" : "Enseñar" }}
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div *ngIf="status == true">
+      <img src="../../../assets/images/holamundo.jpg" alt="Hello World" />
+    </div>
+  </div>
 </div>
