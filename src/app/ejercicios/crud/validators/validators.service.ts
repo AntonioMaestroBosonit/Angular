@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class ValidatorService implements AsyncValidator {
 
-  public usernamePattern: string = '([a-zA-Z]+) ([a-zA-Z]+)';
-  public emailPattern: string = '^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$';
+  public usernamePattern: string = '[a-zA-ZÀ-ÖØ-öø-ÿ]+\.?(( |\-)[a-zA-ZÀ-ÖØ-öø-ÿ]+\.?)*';  //Exp regular que permite muchas palabras y símbolos
+  public emailPattern: string = '^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$';  //Exp regular normal de un email
 
   constructor( private http: HttpClient ) { }
 
@@ -30,8 +30,11 @@ export class ValidatorService implements AsyncValidator {
       const pass2 = formGroup.get(field2)?.value;
 
       if ( pass1 !== pass2 ) {
+        formGroup.get(field2)?.setErrors({ noIguales: true })
         return { noIguales: true }
       }
+
+      formGroup.get(field2)?.setErrors( null )
 
       return null;
       

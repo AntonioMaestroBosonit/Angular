@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fromEvent, interval, Observable, scan, switchMap, tap, Subject, map, merge, takeUntil, mapTo } from 'rxjs';
+import { fromEvent, interval, Observable, scan, switchMap, tap, Subject, map, merge, takeUntil } from 'rxjs';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({

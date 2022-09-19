@@ -1,15 +1,6 @@
 {
   "usuarios": [
     {
-      "username": "admin unos",
-      "email": "admin@hola.com",
-      "pass": "1234",
-      "country": "Lao People's Democratic Republic",
-      "city": "Jaén",
-      "offers": true,
-      "id": 1
-    },
-    {
       "username": "user dos",
       "email": "user@hola.com",
       "pass": "4321",
@@ -44,6 +35,15 @@
       "city": "prueba",
       "offers": true,
       "id": 5
+    },
+    {
+      "username": "Adiós",
+      "email": "jeje@pc.es",
+      "pass": "asdfg",
+      "country": "Ghana",
+      "city": "jiji",
+      "offers": true,
+      "id": 6
     }
   ],
   "universidades": [

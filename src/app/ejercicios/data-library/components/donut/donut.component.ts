@@ -6,7 +6,13 @@ import { cardType } from '../../interfaces/data.interface';
 
 @Component({
   selector: 'app-donut',
-  templateUrl: './donut.component.html'
+  templateUrl: './donut.component.html',
+  styles:[`
+    .charts{
+      height: 60%;
+      width: 60%;
+    }
+  `]
 })
 export class DonutComponent implements OnInit {
   

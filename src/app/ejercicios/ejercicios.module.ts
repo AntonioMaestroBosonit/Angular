@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { EjerciciosRoutingModule } from './ejercicios-routing.module';
 import { NgChartsModule } from 'ng2-charts';
 
-import { ChildComponent }         from './communication/pages/child.component';
+import { ChildComponent }         from './communication/components/child/child.component';
 import { CommunicationComponent } from './communication/pages/communication.component';
 // import { DataService }         from './communication/services/data.service';
 import { CounterComponent }       from './counter/pages/counter.component';
@@ -13,7 +13,7 @@ import { FormComponent }          from './crud/pages/form/form.component';
 import { BarComponent }           from './data-library/components/bar/bar.component';
 import { DataLibraryComponent }   from './data-library/pages/data-library.component';
 import { DonutComponent }         from './data-library/components/donut/donut.component';
-import { DisplayComponent }       from './display/display.component';
+import { DisplayComponent }       from './display/pages/display.component';
 import { ControllerComponent }    from './lights/components/controller/controller.component';
 import { LightsComponent }        from './lights/pages/lights.component';
 import { TrafficLightComponent }  from './lights/components/traffic-light/traffic-light.component';

@@ -7,7 +7,13 @@ import { monsterAtrib } from '../../interfaces/data.interface';
 
 @Component({
   selector: 'app-bar',
-  templateUrl: './bar.component.html'
+  templateUrl: './bar.component.html',
+  styles: [`
+  .charts{
+    height: 80%;
+    width: 80%;
+   }
+  `]
 })
 export class BarComponent implements OnInit {
   //Para actualizar los valores de la gráfica
@@ -28,6 +34,7 @@ export class BarComponent implements OnInit {
 
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
+    maintainAspectRatio: false,
     scales: {
       x: {},
       y: {

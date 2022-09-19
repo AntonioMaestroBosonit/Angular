@@ -10,6 +10,7 @@
           placeholder="Nombre de usuario"
         />
         <label for="username">Nombre de usuario</label>
+        <span class="form-text text-danger" *ngIf="validate('username')">Debes introducir tu nombre y primer apellido</span>
       </div>
       <div class="form-floating w-50">
         <input
@@ -20,6 +21,7 @@
           placeholder="Correo electrónico"
         />
         <label for="email">Correo electrónico</label>
+        <span class="form-text text-danger" *ngIf="validate('email')">Debes introducir un email válido</span>
       </div>
     </div>
   </div>
@@ -34,6 +36,7 @@
           placeholder="Contraseña"
         />
         <label for="pass">Contraseña</label>
+        <span class="form-text text-danger" *ngIf="validate('pass')">Debe tener 4 caracteres como mínimo</span>
       </div>
       <div class="form-floating w-50">
         <input
@@ -44,6 +47,7 @@
           placeholder="Confirmar contraseña"
         />
         <label for="passConfirm">Confirmar contraseña</label>
+        <span class="form-text text-danger" *ngIf="validate('passConfirm')">Las contraseñas no coinciden</span>
       </div>
     </div>
   </div>
@@ -54,6 +58,7 @@
         <option selected disabled value="">País</option>
         <option *ngFor="let country of countries" [value]="country.name">{{ country.name }}</option>
       </select>
+      <span class="form-text text-danger" *ngIf="validate('country')">Debes introducir tu país</span>
       <div class="form-floating w-50">
         <input
           type="text"
@@ -63,11 +68,12 @@
           placeholder="Ciudad"
         />
         <label for="city">Ciudad</label>
+        <span class="form-text text-danger" *ngIf="validate('city')">Debes introducir tu ciudad</span>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col d-flex justify-content-around align-items-center mb-3">
+    <div class="col d-flex justify-content-around align-items-center mb-4">
       <div class="form-check">
         <input
           class="form-check-input"
@@ -87,16 +93,5 @@
     </div>
   </div>
 </form>
-
-
-<div class="row">
-    <div class="col">
-        <span>Valid</span>
-        <pre>{{ form.valid }}</pre>
-
-        <span>Value</span>
-        <pre>{{ form.value | json }}</pre>
-    </div>
-</div>
 
 <app-crud [users]="users" (user)="onUser($event)"></app-crud>

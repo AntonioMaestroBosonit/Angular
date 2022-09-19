@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommunicationComponent } from './communication/pages/communication.component';
 import { CounterComponent } from './counter/pages/counter.component';
 import { DataLibraryComponent } from './data-library/pages/data-library.component';
-import { DisplayComponent } from './display/display.component';
+import { DisplayComponent } from './display/pages/display.component';
 import { LightsComponent } from './lights/pages/lights.component';
 import { SearchComponent } from './search/pages/form/search.component';
 import { FormComponent } from './crud/pages/form/form.component';

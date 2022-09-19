@@ -58,6 +58,11 @@ export class FormComponent implements OnInit {
     this.getUsers();
   }
 
+  validate( name: string ) {
+    return this.form.controls[name]?.invalid 
+        && this.form.controls[name]?.touched;
+  }
+
   //@Output
   onUser(user: User) {
     this.form.setValue({
@@ -93,7 +98,6 @@ export class FormComponent implements OnInit {
           this.getUsers();
         });
       }
-
       
       //reset y seteo valores
       this.form.reset();
