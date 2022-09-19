@@ -5,19 +5,25 @@
 </div>
 <div class="row">
   <div class="col">
-    <p class="mb-1">Setup</p>
-    <button class="btn btn-success me-1" id="start">start</button>
-    <button class="btn btn-warning me-1" id="pause">pause</button>
-    <button class="btn btn-danger me-1" id="reset">reset</button>
-    <p class="mb-1 mt-3">Count</p>
-    <button class="btn btn-success me-1" id="countUp">count up</button>
-    <button class="btn btn-primary me-1" id="countDown">count down</button>
-    <form [formGroup]="form" autocomplete="off">
-      <p class="mb-1 mt-3">Step to</p>
-      <input type="number" class="form-control w-25" id="stepTo" formControlName="stepTo"/>
-      <p class="mb-1 mt-3" >Step</p>
-      <input type="number" class="form-control w-25" id="step" formControlName="step"/>
-    </form>
+    <div class="controllersWidth">
+      <p class="mb-1">Setup</p>
+      <div class="buttonsRow d-flex justify-content-between">
+        <button class="btn btn-success me-1" id="start">start</button>
+        <button class="btn btn-warning me-1" id="pause">pause</button>
+        <button class="btn btn-danger me-1" id="reset">reset</button>
+      </div>
+      <p class="mb-1 mt-3">Count</p>
+      <div class="buttonsRow d-flex justify-content-between">
+        <button class="btn btn-success me-1" id="countUp">count up</button>
+        <button class="btn btn-primary me-1" id="countDown">count down</button>
+      </div>
+      <form [formGroup]="form" autocomplete="off">
+        <p class="mb-1 mt-3">Step to</p>
+        <input type="number" class="form-control" id="stepTo" formControlName="stepTo"/>
+        <p class="mb-1 mt-3" >Step</p>
+        <input type="number" class="form-control" id="step" formControlName="step"/>
+      </form>
+    </div>
   </div>
 </div>
 

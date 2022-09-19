@@ -6,7 +6,15 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   selector: 'app-counter',
   templateUrl: './counter.component.html',
   styles: [`
-    h1{ font-size: 70px}
+    h1 {
+      font-size: 70px;
+      width: 210px;
+      text-align: center;
+    }
+    .controllersWidth {
+      width: 210px;
+      text-align: center;
+    }
   `]
 })
 export class CounterComponent implements OnInit {

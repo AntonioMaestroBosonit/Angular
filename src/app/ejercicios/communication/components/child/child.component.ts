@@ -24,17 +24,17 @@ export class ChildComponent implements OnInit {
 
   //Métodos click
   //service
-  serviceParent(): void {
+  serviceToParent(): void {
     this.parentEv.emit ( this.dataService.ParentText )
   }
 
   //output
-  outputParent(){
+  outputToParent(){
     this.parentEv.emit('CHILD USING OUTPUT EVENT')
   }
 
   //observable
-  observableParent(): void {
+  observableToParent(): void {
     this.dataService.setChild$()
   }
 

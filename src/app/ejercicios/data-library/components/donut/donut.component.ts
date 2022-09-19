@@ -9,8 +9,13 @@ import { cardType } from '../../interfaces/data.interface';
   templateUrl: './donut.component.html',
   styles:[`
     .charts{
-      height: 60%;
-      width: 60%;
+      width:30%;
+    }
+
+    @media (max-width: 1000px) {
+      .charts {
+        width: 60%;
+      }
     }
   `]
 })

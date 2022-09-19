@@ -43,12 +43,12 @@ export class CommunicationComponent implements OnInit {
 
   //Métodos click
   //Service
-  serviceChild(): void {
+  serviceToChild(): void {
     this.childText = this.dataService.ChildText;
   }
   
   //Input y Output
-  inputChild ():void {
+  inputToChild ():void {
     this.childText = 'PARENT USING INPUT PROPERTY';
   }
 
@@ -57,7 +57,7 @@ export class CommunicationComponent implements OnInit {
   }
 
   //Observable
-  observableChild(): void {
+  observableToChild(): void {
     this.dataService.setParent$()
   }
 }

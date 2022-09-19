@@ -2,17 +2,21 @@ import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 import { Cards } from '../../interfaces/cards.interface';
-import DataLabelsPlugin from 'chartjs-plugin-datalabels';
 import { monsterAtrib } from '../../interfaces/data.interface';
 
 @Component({
   selector: 'app-bar',
   templateUrl: './bar.component.html',
   styles: [`
-  .charts{
-    height: 80%;
-    width: 80%;
-   }
+    .charts{
+      width:50%;
+    }
+    @media (max-width: 1000px) {
+      .charts {
+        width: 80%;
+      }
+    }
+  
   `]
 })
 export class BarComponent implements OnInit {
@@ -34,7 +38,7 @@ export class BarComponent implements OnInit {
 
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
     scales: {
       x: {},
       y: {

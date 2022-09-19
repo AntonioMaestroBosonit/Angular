@@ -26,6 +26,8 @@ export class SearchComponent implements OnInit {
     }
 
   search() {
+    //Ternaria para que si borro todo el contenido, no aparezca nada en vez de todo
+    this.form.controls['name'].value == "" ? this.universities = [] : 
     this.universitiesService.getUniversities( this.form.value['country'], this.form.value['name'])
       .subscribe( res => {
         this.universities = res;

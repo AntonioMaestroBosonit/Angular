@@ -1,13 +1,20 @@
 <div class="col mt-4">
-  <h4>Controladores:</h4>
-  <hr class="w-25" />
+  <h3 class="controllerWidth">Controles:</h3>
+  <hr class="controllerWidth" />
 
+  <!-- <button class="btn mb-2" [class]="(status) ? 'btn-danger' : 'btn-success'" (click)="onOff()">{{ (status) ? 'Apagar' : 'Encender' }}</button> -->
+  <div class="onoffswitch mb-2">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked (click)="onOff()">
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
   <form [formGroup]="form" autocomplete="off" (change)="lightChange()">
-    <select class="form-select w-25" formControlName="color">
+    <select class="form-select controllerWidth" formControlName="color">
       <option value="red">Rojo</option>
       <option value="orange">Ámbar</option>
       <option value="green">Verde</option>
     </select>
   </form>
-  <button class="btn mt-1" [class]="(status) ? 'btn-danger' : 'btn-success'" (click)="onOff()">{{ (status) ? 'Apagar' : 'Encender' }}</button>
 </div>

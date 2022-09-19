@@ -5,7 +5,8 @@ import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-controller',
-  templateUrl: './controller.component.html'
+  templateUrl: './controller.component.html',
+  styleUrls: ['./controller.component.css']
 })
 export class ControllerComponent implements OnInit {
 

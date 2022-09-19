@@ -26,14 +26,14 @@ export class CrudComponent {
   delete( id: number | undefined) {
     this.crudService.deleteUser( id )
       .subscribe( res => {
-        console.log( res );
+        // console.log( res );
         this.getUsers();
       })
   }
 
   update( user: User ){
     this.user.emit( user );
-    console.log(user);
+    // console.log( user );
     
   }
 

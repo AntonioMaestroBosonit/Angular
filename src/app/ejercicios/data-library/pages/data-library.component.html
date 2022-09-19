@@ -1,9 +1,16 @@
-<div class="row" *ngIf="loaded">
-    <div class="col-md-6">
-        <app-donut [cards]="cards"></app-donut>
-    </div>
-    
-    <div class="col-md-6">
-        <app-bar [cards]="cards"></app-bar>
+<div class="row d-flex justify-content-center" *ngIf="!loaded">
+    <div class="alert alert-info w-auto">
+        <p class="m-0 fs-2"><span class="spinner-border spinner-border me-2"></span>Cargando...</p>
     </div>
 </div>
+<div class="row" *ngIf="loaded">
+    <app-donut [cards]="cards" class="d-flex justify-content-center"></app-donut>
+</div>
+<div class="row ms-5 me-5 mt-4 mb-1" *ngIf="loaded">
+    <hr>
+</div>
+    
+<div class="row" *ngIf="loaded">
+    <app-bar [cards]="cards" class="d-flex justify-content-center"></app-bar>
+</div>
+

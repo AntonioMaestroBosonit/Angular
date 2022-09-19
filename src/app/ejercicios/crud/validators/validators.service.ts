@@ -17,7 +17,7 @@ export class ValidatorService implements AsyncValidator {
   validate( control: AbstractControl ): Observable<ValidationErrors | null> {
 
     const email = control.value;
-    console.log(email);
+    // console.log( email );
     
 
     return this.http.get<any[]>(`http://localhost:3000/usuarios?q=${ email }`)

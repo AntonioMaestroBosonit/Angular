@@ -83,18 +83,18 @@ export class FormComponent implements OnInit {
     delete this.form.value['passConfirm'];
     this.form.value['id'] = this.UserId;
     
-    console.log(this.form.value);
+    // console.log(this.form.value);
 
     if (this.buttonEdit) {
       this.crudService.editUser(this.form.value)
         .subscribe((res) => {
-          console.log('actu', res);
+          // console.log('actu', res);
           this.getUsers();
         })
     } else {
       this.crudService.newUser(this.form.value)
         .subscribe((res) => {
-          console.log('respuesta', res);
+          // console.log('respuesta', res);
           this.getUsers();
         });
       }
