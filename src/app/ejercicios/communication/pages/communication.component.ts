@@ -7,16 +7,14 @@ import { DataService } from '../services/data.service';
   styles:[
     `
     .padre {
-      /* border: solid 1px black; */
       padding: 5px;
-      margin-right: 5px;
+      margin: auto;
       border-radius: 10px;
       background-color: #CACACA;
       text-align: center;
     }
     .hijo {
       border: solid 1px #CACACA;
-      /* padding: 5px; */
       margin: 5px;
       border-radius: 10px;
       background-color: white;

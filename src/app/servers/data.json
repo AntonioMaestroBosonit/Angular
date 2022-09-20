@@ -42,7 +42,7 @@
       "pass": "asdfg",
       "country": "Ghana",
       "city": "jiji",
-      "offers": true,
+      "offers": false,
       "id": 6
     }
   ],
